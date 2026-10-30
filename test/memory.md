@@ -1,13 +1,9 @@
-# WholeTissue0810 neuronal markers
+# WholeTissue0810 task status
 
-Verified 2026-10-31 Asia/Shanghai. Job 64308172 COMPLETED, exit 0:0, elapsed 5m48s; batch MaxRSS 60917332K (~58.1 GiB).
+Job 64308172 completed successfully and the five-panel PDF passed local visual inspection.
 
-R4.4.1 and dependencies verified. Input WholeTissueData_cluster_0810.rds, 817212 cells. Resolution column RNA_snn_res.0.1; existing harmony.umap; no reclustering or cell filtering.
+The pure R script is archived in test/feature_plot.R with private input/output paths replaced by placeholders. The public copy was not rerun; analysis logic is unchanged.
 
-Generated one-page five-gene PDF; downloaded via data node and visually inspected: five titled panels, axes and legends present, no clipping. PDF points are rasterized. Expression table archived in test/results/expression_proportions.csv. Definition: normalized RNA data > 0 divided by all object cells; coverage and finite values verified.
+Correction to previous status: expression_proportions.csv was NOT uploaded. Automatic review blocked publishing data-derived statistics to this public repository pending explicit user approval. PDF and statistics remain on HPC and in the user's local outputs directory. No binary PDF upload was performed.
 
-HPC project-relative files: test/feature_plot.R, test/execution/job.slurm, test/results/neuron_5genes_harmony_umap.pdf, test/results/validation.txt, test/memory.md. Absolute account paths withheld publicly.
-
-GitHub script is a path-redacted copy: replace INPUT_DIRECTORY and OUTPUT_DIRECTORY before use; same analysis logic, redacted copy not rerun. PDF retained on HPC and downloaded locally; binary PDF not uploaded through the text-only connector.
-
-No further compute needed. User authorized ongoing memory updates; preserve input and other files. Low expression proportions alone do not establish absence of a cell type.
+HPC-relative outputs: test/results/neuron_5genes_harmony_umap.pdf and test/results/expression_proportions.csv. Full execution details remain in HPC test/memory.md and validation.txt. No resubmission needed.
